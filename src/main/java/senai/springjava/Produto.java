@@ -6,13 +6,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Usuario {
+public class Produto {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
 	private String nome;
-	private String email;
+	private String descricao;
+	private Double valor;
 	
 	public Integer getId() {
 		return id;
@@ -26,11 +27,17 @@ public class Usuario {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getEmail() {
-		return email;
+	public String getDescricao() {
+		return descricao;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setDescricao(String email) {
+		this.descricao = email;
+	}
+	public Double getValor() {
+		return valor;
+	}
+	public void setValor(Double valor) {
+		this.valor = valor;
 	}
 	
 }
