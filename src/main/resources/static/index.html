@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Salgados da Cleo</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <style>
+
+    </style>
+    <div id="banner">
+        <button class="button"><a href="login.html">Login</a></button>
+        <img src="img/loja.jpg" alt="">
+    </div>
+
+    <div id="container">
+        <div id="lsQuantidade">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Valor Unitário</th>
+                        <th>Quantidade</th>
+                        <th>Valor Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <label for="nome">Nome</label><br>
+            <input type="text" id="nome">
+            <input type="button" id="bt-enviar" value="Enviar Pedido" onclick="enviarWhatsApp()">
+        </div>
+        <div class="ls-produto" id="lsProduto">
+        </div>
+
+        <div id="bt-fixo" onclick="carrinho(),mudarTela()">
+            <i style="font-size:54px" class="fa">&#xf07a;</i>
+            <span id="qt-produto">0</span>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
